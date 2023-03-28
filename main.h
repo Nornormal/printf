@@ -10,7 +10,7 @@
 
 int _printf(const char *format, ...);
 
-/*
+/**
  * struct format_s - A new type defining a format struct.
  * @fcase: checked cases.
  * @fun: function pointer to checked cases.

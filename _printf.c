@@ -2,7 +2,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 
-/*
+/**
  * case_c - function prints character.
  * @args: input arguments.
  *
@@ -16,7 +16,7 @@ int case_c(va_list args)
 	return (1);
 }
 
-/*
+/**
  * case_s - function prints sting.
  * @args: input agruments.
  *
@@ -32,7 +32,7 @@ int case_s(va_list args)
 	return (counter);
 }
 
-/*
+/**
  * case_mod - function prints modulus(%).
  * @args: input arguments.
  *
@@ -44,7 +44,7 @@ int case_mod(va_list __attribute__((unused)) args)
 	return (1);
 }
 
-/*
+/**
  * _printf - function that produces output according to a format.
  * @format: a character string. The format string is composed of
  * zero or more directives.
