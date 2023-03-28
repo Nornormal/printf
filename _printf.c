@@ -54,7 +54,7 @@ int case_mod(va_list __attribute__((unused)) args)
  */
 int _printf(const char *format, ...)
 {
-	int i, counter = 0;
+	int i, counter;
 	va_list args;
 	format_t formats[] = {
 		{'c', case_c}, {'s', case_s}, {'%', case_mod}, {0, NULL}
