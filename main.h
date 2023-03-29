@@ -7,8 +7,8 @@
 #include <stdarg.h>
 #include <unistd.h>
 
-
-int _printf(const char *format, ...);
+#define UNUSED(x) (void)(x)
+#define BUFF_SIZE 1024
 
 /**
  * struct format_s - A new type defining a format struct.
@@ -18,7 +18,11 @@ int _printf(const char *format, ...);
 typedef struct format_s
 {
 	char fcase;
-	int (*fun)(va_list);
+	int (*fun)(va_list, char[], int, int, int ,int);
 } format_t;
+
+int _printf(const char *format, ...);
+int handle_print(const char *format, int *i,
+va_list args, char buffer[], int flags, int width, int precision, int size);
 
 #endif
